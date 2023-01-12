@@ -54,7 +54,7 @@
 
 ## 1. Saga (Pub / Sub)
 
-![image](https://user-images.githubusercontent.com/18476445/211998055-0c35b1d9-6092-4cb2-81b6-2a5d05a77761.png)
+![image](https://user-images.githubusercontent.com/18476445/212003911-da4cf96c-f2be-45a8-a03b-94a6e5acfce2.png)
 
 
 ## 2. CQRS
