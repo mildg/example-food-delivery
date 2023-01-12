@@ -52,7 +52,19 @@
 
 # 체크포인트
 
+## 1. Saga (Pub / Sub)
+
 ![image](https://user-images.githubusercontent.com/18476445/211955571-01b1d263-67cf-4f3c-8160-e860cacb274d.png)
+
+## 2. CQRS
+
+
+## 3. Compensation / Correlation
+
+
+
+
+
 
 
 - 분석 설계
