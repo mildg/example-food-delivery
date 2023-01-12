@@ -52,6 +52,9 @@
 
 # 체크포인트
 
+![image](https://user-images.githubusercontent.com/18476445/211955571-01b1d263-67cf-4f3c-8160-e860cacb274d.png)
+
+
 - 분석 설계
 
 
