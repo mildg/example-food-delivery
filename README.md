@@ -106,7 +106,7 @@
 
         /** Example 2:  finding and process*/
         
-        repository().findById(orderCancelled.getId()).ifPresent(storeOrder->{
+        repository().findById(orderCancelled.getOrderId()).ifPresent(storeOrder->{
             
             storeOrder.setStatus("취소"); // do something
             repository().save(storeOrder);
