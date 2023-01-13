@@ -69,9 +69,29 @@
 
 
 ## 3. Compensation / Correlation
+```
+    public static void cookCancel(OrderCancelled orderCancelled){
+
+        /** Example 1:  new item 
+        StoreOrder storeOrder = new StoreOrder();
+        repository().save(storeOrder);
+
+        */
+
+        /** Example 2:  finding and process*/
+        
+        repository().findById(orderCancelled.getId()).ifPresent(storeOrder->{
+            
+            storeOrder.setStatus("취소"); // do something
+            repository().save(storeOrder);
 
 
+         });
+        
 
+        
+    }
+```
 
 
 
