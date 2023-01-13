@@ -52,10 +52,36 @@
 
 # 체크포인트
 
-## 1. Saga (Pub / Sub)
-
 ![image](https://user-images.githubusercontent.com/18476445/212009241-af9ee4c6-7f70-42f7-b39b-34d1a2407e7b.png)
 
+## 1. Saga (Pub / Sub)
+```
+    public static void cookInfoTrasfer(CookStarted cookStarted){
+
+        /** Example 1:  new item */
+        Delivery delivery = new Delivery();
+        delivery.orderId = cookStarted.orderId;
+        delivery.menuId = cookStarted.menuId;
+        delivery.userId = cookStarted.userId;
+        delivery.address = cookStarted.address;
+        repository().save(delivery);
+
+        
+
+        /** Example 2:  finding and process
+        
+        repository().findById(cookStarted.get???()).ifPresent(delivery->{
+            
+            delivery // do something
+            repository().save(delivery);
+
+
+         });
+        */
+
+        
+    }
+```
 
 ## 2. CQRS
 
